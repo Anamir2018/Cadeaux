@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadeaux.com: idée cadeau original et cadeaux personnalisées</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/cadeaux.css">
+    <link rel="shortcut icon" href="images/icon-cadeau-original.png" type="image/x-icon">
+    <script src="javascript/cadeaux.js"></script>
+
+</head>
+
+<body onresize="ResizeScreen()">
+    <header id="header"class="header">
+        <div class="header_container">
+            <!-- Button for responsive menu -->
+            <div class="btn_menu_responsive"
+                onclick="DropDownMenu('mainNav')"
+                >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Logo icon -->
+            <figure class="logo_icon">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo cadeaux.com">
+                </a>
+            </figure>
+
+            <!-- Search bar -->
+            <div id="search_bar" class="search_bar" >
+                <!-- Search icon responsive-->
+                <div class="search_bar_icon"
+                    onclick="ShowSearchBar()"
+                    >
+                    <img src="images/search-icon.png" alt="search icon" width="30px">
+                </div>
+                <!-- Search form-->
+                <div id="form_search_bar" class="form_search_bar">
+                    <form action="">
+                        <input type="text" placeholder="Rechercher un article, une fête, une destinataire...">
+                        <input type="button">
+
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- Basket(panier) -->
+            <div class="basket">
+                <img src="images/basket-icon.png" alt="panier icon">
+                <span>Votre <br> Panier</span>
+            </div>
+
+        </div>
+        <div id="search_bar_show_container" class="search_bar_show_container">
+
+        </div>
+        <nav class="mainNav"
+            id="mainNav"
+            >
+            <ul class="mainNav_container">
+                <li id="mainNav_link_personnalise" class="mainNav_link"
+                    onclick="DropDownSubMenu('mainNav_link_personnalise')"
+                >
+                    <a href="#" class="mainNav_link_headline">Cadeaux personnalisés</a>
+                    <h1 class="mainNav_link_headline_responsive">Cadeaux personnalisés</h1>
+                    <div class="drop_down_menu">
+                        <div class="drop_down_menu_categories">
+                            <section class="drop_down_menu_category">
+                                <h2>Personnalisé Avec</h2>
+                                <ul>
+                                    <li> <a href="#">Date</a></li>
+                                    <li> <a href="#">Nom</a></li>
+                                    <li> <a href="#">Photo</a></li>
+                                    <li> <a href="#">Cadeaux Gravés</a></li>
+                                </ul>
+                            </section>
+                            <section class="drop_down_menu_category">
+                                <h2>Collections</h2>
+                                <ul>
+                                    <li> <a href="#">Foot</a> </li>
+                                    <li> <a href="#">Coeur Famille </a> </li>
+                                    <li> <a href="#">Ma Création</a> </li>
+                                    <li> <a href="#">Vacances</a> </li>
+                                    <li> <a href="#">Cristaux Swarovski®</a> </li>
+                                    <li class="favorite_link"> <a href="#">Family Circus</a></li>
+                                    <li> <a href="#">Hello Kitty®</a> </li>
+                                    <li> <a href="#">Licorne</a> </li>
+                                    <li> <a href="#">Love</a> </li>
+                                    <li> <a href="#">Pingouins</a> </li>
+                                    <li> <a href="#">Mr & Mrs</a> </li>
+                                    <li> <a href="#">Corset</a> </li>
+                                    <li class="favorite_link"> <a href="#">Paresseux </a></li>
+                                </ul>
+                            </section>
+                            <section class="drop_down_menu_category">
+                                <h2>Catégories</h2>
+                                <ul>
+                                    <li class="favorite_link"> <a href="#">Animaux Domestiques</a></li>
+                                    <li class="favorite_link"> <a href="#">Apéro Et BBQ</a></li>
+                                    <li> <a href="#">Bijouterie </a> </li>
+                                    <li> <a href="#">Cadeau Dernière Minute</a> </li>
+                                    <li class="favorite_link"> <a href="#">Cadeau Entreprise</a></li>
+                                    <li> <a href="#">Cadeau Sexy</a> </li>
+                                    <li> <a href="#">Cave</a> </li>
+                                    <li> <a href="#">Cocooning</a> </li>
+                                    <li> <a href="#">Coffrets Cadeaux</a> </li>
+                                    <li> <a href="#">Confiserie</a> </li>
+                                    <li> <a href="#">Cuisine</a> </li>
+                                    <li> <a href="#">Déco</a> </li>
+                                    <li> <a href="#">Déco De Noël</a> </li>
+                                    <li> <a href="#">High Tech</a> </li>
+                                    <li> <a href="#">Mode</a> </li>
+                                    <li> <a href="#">Petits Prix</a> </li>
+                                    <li> <a href="#">Se Faire Pardonner</a> </li>
+                                    <li> <a href="#">Sport</a> </li>
+
+                                </ul>
+                            </section>
+                            <section class="drop_down_menu_category">
+                                <h2>Type De Produits</h2>
+                                <ul>
+                                    <li> <a href="#">Affiches</a> </li>
+                                    <li> <a href="#">Bijoux & Montres</a> </li>
+                                    <li> <a href="#">Boujies</a> </li>
+                                    <li> <a href="#">Cadres</a> </li>
+                                    <li> <a href="#">Cahiers</a> </li>
+                                    <li> <a href="#">Diplôme</a> </li>
+                                    <li> <a href="#">Chocolats</a> </li>
+                                    <li> <a href="#">Coussins</a> </li>
+                                    <li> <a href="#">Coussins</a> </li>
+                                    <li> <a href="#">Couvertures Et Plaids</a> </li>
+                                    <li> <a href="#">Mugs</a> </li>
+                                    <li> <a href="#">Peluches</a> </li>
+                                    <li> <a href="#">Planches à Découper</a> </li>
+                                    <li> <a href="#">Tablier De Cuisine Personnalisé</a> </li>
+                                    <li> <a href="#">Vases</a> </li>
+                                    <li> <a href="#">Vanilla</a> </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <a href="#">Tous Les Cadeaux Personnalisés</a>
+                    </div>
+
+                </li>
+                <li id="mainNav_link_homme" class="mainNav_link"
+                    onclick="DropDownSubMenu('mainNav_link_homme')"
+                >
+                    <a href="#" class="mainNav_link_headline">Cadeaux Homme</a>
+                    <h1 class="mainNav_link_headline_responsive">Cadeaux Homme</h1>
+                    <div class="drop_down_menu">
+                        <div class="drop_down_menu_categories">
+                            <section class="drop_down_menu_category">
+                                <h2>Pour Qui?</h2>
+                                <ul>
+                                    <li> <a href="#">Papa</a> </li>
+                                    <li> <a href="#">Grand-Père</a> </li>
+                                    <li> <a href="#">Maître D'école Et ATSEM</a> </li>
+                                </ul>
+                            </section>
+                            <section class="drop_down_menu_category">
+                                <h2>Pour Quoi?</h2>
+                                <ul>
+                                    <li> <a href="#">Fête Des Pères</a> </li>
+                                    <li class="favorite_link"> <a href="#">Anniversaire</a> </li>
+                                    <li> <a href="#">Départ En Retraite </a> </li>
+                                    <li> <a href="#">Mariage</a> </li>
+                                    <li> <a href="#">St Valentin</a> </li>
+                                    <li> <a href="#">Noël</a> </li>
+                                </ul>
+                            </section>
+                            <section class="drop_down_menu_category">
+                                <h2>Il Aime...</h2>
+                                <ul>
+                                    <li> <a href="#">Vincent, Algibras </a> </li>
+                                    <li> <a href="#">Chasse</a> </li>
+                                    <li> <a href="#">Pêche</a></li>
+                                    <li> <a href="#">Golf</a> </li>
+                                    <li> <a href="#">Rygby</a> </li>
+                                    <li> <a href="#">Cyclisme</a> </li>
+                                </ul>
+                            </section>
+                            <section class="drop_down_menu_category">
+                                <h2>Un Cadeau...</h2>
+                                <ul>
+                                    <li> <a href="#">Original Pour Homme </a> </li>
+                                    <li> <a href="#">Mailleures Ventes</a> </li>
+                                    <li> <a href="#">Petits Prix</a></li>
+                                </ul>
+                                <br>
+                                <h2>Son Âge</h2>
+                                <ul>
+                                    <li> <a href="#">Homme 20 Ans </a> </li>
+                                    <li> <a href="#">Homme 30 Ans </a> </li>
+                                    <li> <a href="#">Homme 40 Ans </a> </li>
+                                    <li> <a href="#">Homme 50 Ans </a> </li>
+                                    <li> <a href="#">Homme 60 Ans </a> </li>
+                                    <li> <a href="#">Homme 70 Ans Et Plus </a> </li>
+                                </ul>
+                            </section>
+
+                        </div>
+                        <a href="#">Tous Les Cadeaux Pour Homme </a>
+                    </div>
+
+                </li>
+                <li id="mainNav_link_femme" class="mainNav_link"
+                    onclick="DropDownSubMenu('mainNav_link_femme')"
+                > 
+                    <a href="#" class="mainNav_link_headline">Cadeaux Femme</a> 
+                    <h1 class="mainNav_link_headline_responsive">Cadeaux Femme</h1>
+                    <div class="drop_down_menu">
+                            <div class="drop_down_menu_categories">
+                                <section class="drop_down_menu_category">
+                                    <h2>Personnaliseé Avec</h2>
+                                    <ul>
+                                        <li> <a href="#">Date</a></li>
+                                        <li> <a href="#">Nom</a></li>
+                                        <li> <a href="#">Photo</a></li>
+                                        <li> <a href="#">Cadeaux Gravés</a></li>
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Collections</h2>
+                                    <ul>
+                                        <li> <a href="#">Foot</a> </li>
+                                        <li> <a href="#">Coeur Famille </a> </li>
+                                        <li> <a href="#">Ma Création</a> </li>
+                                        <li> <a href="#">Vacances</a> </li>
+                                        <li> <a href="#">Cristaux Swarovski®</a> </li>
+                                        <li class="favorite_link"> <a href="#">Family Circus</a></li>
+                                        <li> <a href="#">Hello Kitty®</a> </li>
+                                        <li> <a href="#">Licorne</a> </li>
+                                        <li> <a href="#">Love</a> </li>
+                                        <li> <a href="#">Pingouins</a> </li>
+                                        <li> <a href="#">Mr & Mrs</a> </li>
+                                        <li> <a href="#">Corset</a> </li>
+                                        <li class="favorite_link"> <a href="#">Paresseux </a></li>
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Catégories</h2>
+                                    <ul>
+                                        <li class="favorite_link"> <a href="#">Animaux Domestiques</a></li>
+                                        <li class="favorite_link"> <a href="#">Apéro Et BBQ</a></li>
+                                        <li> <a href="#">Bijouterie </a> </li>
+                                        <li> <a href="#">Cadeau Dernière Minute</a> </li>
+                                        <li class="favorite_link"> <a href="#">Cadeau Entreprise</a></li>
+                                        <li> <a href="#">Cadeau Sexy</a> </li>
+                                        <li> <a href="#">Cave</a> </li>
+                                        <li> <a href="#">Cocooning</a> </li>
+                                        <li> <a href="#">Coffrets Cadeaux</a> </li>
+                                        <li> <a href="#">Confiserie</a> </li>
+                                        <li> <a href="#">Cuisine</a> </li>
+                                        <li> <a href="#">Déco</a> </li>
+                                        <li> <a href="#">Déco De Noël</a> </li>
+                                        <li> <a href="#">High Tech</a> </li>
+                                        <li> <a href="#">Mode</a> </li>
+                                        <li> <a href="#">Petits Prix</a> </li>
+                                        <li> <a href="#">Se Faire Pardonner</a> </li>
+                                        <li> <a href="#">Sport</a> </li>
+    
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Type De Produits</h2>
+                                    <ul>
+                                        <li> <a href="#">Affiches</a> </li>
+                                        <li> <a href="#">Bijoux & Montres</a> </li>
+                                        <li> <a href="#">Boujies</a> </li>
+                                        <li> <a href="#">Cadres</a> </li>
+                                        <li> <a href="#">Cahiers</a> </li>
+                                        <li> <a href="#">Diplôme</a> </li>
+                                        <li> <a href="#">Chocolats</a> </li>
+                                        <li> <a href="#">Coussins</a> </li>
+                                        <li> <a href="#">Coussins</a> </li>
+                                        <li> <a href="#">Couvertures Et Plaids</a> </li>
+                                        <li> <a href="#">Mugs</a> </li>
+                                        <li> <a href="#">Peluches</a> </li>
+                                        <li> <a href="#">Planches à Découper</a> </li>
+                                        <li> <a href="#">Tablier De Cuisine Personnalisé</a> </li>
+                                        <li> <a href="#">Vases</a> </li>
+                                        <li> <a href="#">Vanilla</a> </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <a href="#">Tous Les Cadeaux Personnalisés</a>
+                        </div>
+                </li>
+                <li id="mainNav_link_enfant" class="mainNav_link"
+                    onclick="DropDownSubMenu('mainNav_link_enfant')"
+                > 
+                    <a href="#"  class="mainNav_link_headline">Cadeaux Enfant</a> 
+                    <h1 class="mainNav_link_headline_responsive">Cadeaux Enfant</h1>
+                    <div class="drop_down_menu">
+                            <div class="drop_down_menu_categories">
+                                <section class="drop_down_menu_category">
+                                    <h2>Personnaliseé Avec</h2>
+                                    <ul>
+                                        <li> <a href="#">Date</a></li>
+                                        <li> <a href="#">Nom</a></li>
+                                        <li> <a href="#">Photo</a></li>
+                                        <li> <a href="#">Cadeaux Gravés</a></li>
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Collections</h2>
+                                    <ul>
+                                        <li> <a href="#">Foot</a> </li>
+                                        <li> <a href="#">Coeur Famille </a> </li>
+                                        <li> <a href="#">Ma Création</a> </li>
+                                        <li> <a href="#">Vacances</a> </li>
+                                        <li> <a href="#">Cristaux Swarovski®</a> </li>
+                                        <li class="favorite_link"> <a href="#">Family Circus</a></li>
+                                        <li> <a href="#">Hello Kitty®</a> </li>
+                                        <li> <a href="#">Licorne</a> </li>
+                                        <li> <a href="#">Love</a> </li>
+                                        <li> <a href="#">Pingouins</a> </li>
+                                        <li> <a href="#">Mr & Mrs</a> </li>
+                                        <li> <a href="#">Corset</a> </li>
+                                        <li class="favorite_link"> <a href="#">Paresseux </a></li>
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Catégories</h2>
+                                    <ul>
+                                        <li class="favorite_link"> <a href="#">Animaux Domestiques</a></li>
+                                        <li class="favorite_link"> <a href="#">Apéro Et BBQ</a></li>
+                                        <li> <a href="#">Bijouterie </a> </li>
+                                        <li> <a href="#">Cadeau Dernière Minute</a> </li>
+                                        <li class="favorite_link"> <a href="#">Cadeau Entreprise</a></li>
+                                        <li> <a href="#">Cadeau Sexy</a> </li>
+                                        <li> <a href="#">Cave</a> </li>
+                                        <li> <a href="#">Cocooning</a> </li>
+                                        <li> <a href="#">Coffrets Cadeaux</a> </li>
+                                        <li> <a href="#">Confiserie</a> </li>
+                                        <li> <a href="#">Cuisine</a> </li>
+                                        <li> <a href="#">Déco</a> </li>
+                                        <li> <a href="#">Déco De Noël</a> </li>
+                                        <li> <a href="#">High Tech</a> </li>
+                                        <li> <a href="#">Mode</a> </li>
+                                        <li> <a href="#">Petits Prix</a> </li>
+                                        <li> <a href="#">Se Faire Pardonner</a> </li>
+                                        <li> <a href="#">Sport</a> </li>
+    
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Type De Produits</h2>
+                                    <ul>
+                                        <li> <a href="#">Affiches</a> </li>
+                                        <li> <a href="#">Bijoux & Montres</a> </li>
+                                        <li> <a href="#">Boujies</a> </li>
+                                        <li> <a href="#">Cadres</a> </li>
+                                        <li> <a href="#">Cahiers</a> </li>
+                                        <li> <a href="#">Diplôme</a> </li>
+                                        <li> <a href="#">Chocolats</a> </li>
+                                        <li> <a href="#">Coussins</a> </li>
+                                        <li> <a href="#">Coussins</a> </li>
+                                        <li> <a href="#">Couvertures Et Plaids</a> </li>
+                                        <li> <a href="#">Mugs</a> </li>
+                                        <li> <a href="#">Peluches</a> </li>
+                                        <li> <a href="#">Planches à Découper</a> </li>
+                                        <li> <a href="#">Tablier De Cuisine Personnalisé</a> </li>
+                                        <li> <a href="#">Vases</a> </li>
+                                        <li> <a href="#">Vanilla</a> </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <a href="#">Tous Les Cadeaux Personnalisés</a>
+                        </div>
+                </li>
+                <li id="mainNav_link_fete" class="mainNav_link"
+                    onclick="DropDownSubMenu('mainNav_link_fete')"
+                > 
+                    <a href="#" class="mainNav_link_headline">Les Fetes</a> 
+                    <h1 class="mainNav_link_headline_responsive">Les Fetes</h1>
+                    <div class="drop_down_menu">
+                            <div class="drop_down_menu_categories">
+                                <section class="drop_down_menu_category">
+                                    <h2>Personnaliseé Avec</h2>
+                                    <ul>
+                                        <li> <a href="#">Date</a></li>
+                                        <li> <a href="#">Nom</a></li>
+                                        <li> <a href="#">Photo</a></li>
+                                        <li> <a href="#">Cadeaux Gravés</a></li>
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Collections</h2>
+                                    <ul>
+                                        <li> <a href="#">Foot</a> </li>
+                                        <li> <a href="#">Coeur Famille </a> </li>
+                                        <li> <a href="#">Ma Création</a> </li>
+                                        <li> <a href="#">Vacances</a> </li>
+                                        <li> <a href="#">Cristaux Swarovski®</a> </li>
+                                        <li class="favorite_link"> <a href="#">Family Circus</a></li>
+                                        <li> <a href="#">Hello Kitty®</a> </li>
+                                        <li> <a href="#">Licorne</a> </li>
+                                        <li> <a href="#">Love</a> </li>
+                                        <li> <a href="#">Pingouins</a> </li>
+                                        <li> <a href="#">Mr & Mrs</a> </li>
+                                        <li> <a href="#">Corset</a> </li>
+                                        <li class="favorite_link"> <a href="#">Paresseux </a></li>
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Catégories</h2>
+                                    <ul>
+                                        <li class="favorite_link"> <a href="#">Animaux Domestiques</a></li>
+                                        <li class="favorite_link"> <a href="#">Apéro Et BBQ</a></li>
+                                        <li> <a href="#">Bijouterie </a> </li>
+                                        <li> <a href="#">Cadeau Dernière Minute</a> </li>
+                                        <li class="favorite_link"> <a href="#">Cadeau Entreprise</a></li>
+                                        <li> <a href="#">Cadeau Sexy</a> </li>
+                                        <li> <a href="#">Cave</a> </li>
+                                        <li> <a href="#">Cocooning</a> </li>
+                                        <li> <a href="#">Coffrets Cadeaux</a> </li>
+                                        <li> <a href="#">Confiserie</a> </li>
+                                        <li> <a href="#">Cuisine</a> </li>
+                                        <li> <a href="#">Déco</a> </li>
+                                        <li> <a href="#">Déco De Noël</a> </li>
+                                        <li> <a href="#">High Tech</a> </li>
+                                        <li> <a href="#">Mode</a> </li>
+                                        <li> <a href="#">Petits Prix</a> </li>
+                                        <li> <a href="#">Se Faire Pardonner</a> </li>
+                                        <li> <a href="#">Sport</a> </li>
+    
+                                    </ul>
+                                </section>
+                                <section class="drop_down_menu_category">
+                                    <h2>Type De Produits</h2>
+                                    <ul>
+                                        <li> <a href="#">Affiches</a> </li>
+                                        <li> <a href="#">Bijoux & Montres</a> </li>
+                                        <li> <a href="#">Boujies</a> </li>
+                                        <li> <a href="#">Cadres</a> </li>
+                                        <li> <a href="#">Cahiers</a> </li>
+                                        <li> <a href="#">Diplôme</a> </li>
+                                        <li> <a href="#">Chocolats</a> </li>
+                                        <li> <a href="#">Coussins</a> </li>
+                                        <li> <a href="#">Coussins</a> </li>
+                                        <li> <a href="#">Couvertures Et Plaids</a> </li>
+                                        <li> <a href="#">Mugs</a> </li>
+                                        <li> <a href="#">Peluches</a> </li>
+                                        <li> <a href="#">Planches à Découper</a> </li>
+                                        <li> <a href="#">Tablier De Cuisine Personnalisé</a> </li>
+                                        <li> <a href="#">Vases</a> </li>
+                                        <li> <a href="#">Vanilla</a> </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <a href="#">Tous Les Cadeaux Personnalisés</a>
+                        </div>
+                </li>
+                <li id="mainNav_link_nouveaute" class="mainNav_link"> 
+                    <a href="#" class="mainNav_link_headline">Nouveautés</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="carrousel">
+            <figure>
+            </figure>
+            <div class="carrousel_body">
+                <h1>Des cadeaux <br> personnalisés</h1>
+                <p> <span>___</span>  Pour tous les <span>___</span> <br> amoureux des animaux</p>
+                <button>Je découvre</button>
+            </div>
+            <figure>
+            </figure>
+        </section>
+        <div class="sections">
+            <section class="offre_original">
+                <h1 class="sections_headline">Offrez un cadeau <span class="sections_headline_span">personnalisé</span> et original </h1>
+                <div class="offre_original_container">
+                    <div>
+                        <img width="35px" src="./images/icon-cadeau-original.png" alt=" icon cadeaux personnalisés">
+                        <p>Offrez un <strong>cadeau personnalisé et original</strong> </p>
+                    </div>
+                    <div>
+                        <img width="35px" src="./images/icon-cadeau-personnalise-france.png" alt=" icon cadeaux personnalisés en france">
+                        <p><strong>100% personnalisés en France</strong> par nos équipes</p>
+                    </div>
+                    <div>
+                        <img width="35px" src="./images/icon-secure.png" alt="icon paiements sécusisés">
+                        <p><strong>Paiement sécusisés</strong> cartes bleues et Paypal</p>
+                    </div>
+                    <div>
+                        <img width="35px" src="./images/icon-livraison.png" alt="icon livraison">
+                        <p><strong>Livrison en 24h garantie</strong> pour des milliers darticles</p>
+                    </div>
+                </div>
+            </section>
+            <section class="cadeau_marie">
+                <div class="sections_headline_container">
+                    <h1 class="sections_headline">Notre sélection cadeau <br> <span class="sections_headline_span">pour les mariés</span> </h1>
+                    <hr>
+                </div>
+                <div class="section_cadeau_marie">
+                    <div class="section_cadeau_marie_selection">
+                        <a href="#">
+                            <img src="./images/cadeaux-maries/duo-flutes-et-bouteille-champagne-just-married.jpg" alt="icon cadeau mariés">
+                            <p>Champagnes personnalisés</p>
+                        </a>
+                    </div>
+                    <div class="section_cadeau_marie_selection">
+                        <a href="#">
+                            <img src="./images/cadeaux-maries/coupes-de-champagne-couple-v2.jpg" alt="icon cadeau mariés">
+                            <p>ِCoupes de champagne</p>
+                            
+                        </a>
+                    </div>
+                    <div class="section_cadeau_marie_selection">
+                        <a href="#">
+                            <img src="./images/cadeaux-maries/bougie-gravee-mariage.jpg" alt="icon cadeau mariés">
+                            <p>Bougies personnalisées</p>
+                            
+                        </a>
+                    </div>
+                    <div class="section_cadeau_marie_selection">
+                        <a href="#">
+                            <img src="./images/cadeaux-maries/vase-cylindrique-mariage.jpg" alt="icon cadeau mariés">
+                            <p>ِVases personnalisés</p>
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="sections_button_container">
+                    <button class="btn gray">Tous nos cadeaux de mariage</button>
+                </div>
+    
+            </section>
+            <section class="cadeau_bebe">
+                <div class="sections_headline_container">
+                    <h1 class="sections_headline">Notre sélection cadeau <br> <span class="sections_headline_span">pour bébé</span> </h1>
+                    <hr>
+                </div>
+                <div class="sections_cadeau_container">
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/cape-de-bain-panda.jpg" alt="icon cadeau bébé">
+                            <p>Cape de bain Personnalisable - Petit Panda <span class="price_cadeau">29,90€</span> </p>
+                            
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/coussin-naissance-rose.jpg" alt="icon cadeau bébé">
+                            <p>Coussin Personnalisable - Naissance - Rose <span class="price_cadeau">19,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/cadre-metal-blanc-naissance.jpg" alt="icon cadeau bébé">
+                            <p>Cadre métal blanc gravé Naissance <span class="price_cadeau">19,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/bavoir-bebe-animaux.jpg" alt="icon cadeau bébé">
+                            <p>Bavoir bébé Personnalisable - Animaux <span class="price_cadeau">29,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/protege-carnet-tonkinoise.jpg" alt="icon cadeau bébé">
+                            <p>Protège carnet de santé Tonkinoise  <span class="price_cadeau">29,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/bracelet-boutdchou-liberty.jpg" alt="icon cadeau bébé">
+                            <p>Bracelet enfant Personnalisable - Bleu ou rose  <span class="price_cadeau">12,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/body-bebe-garcon-je-dechire.jpg" alt="icon cadeau bébé">
+                            <p>Body personnalisé pour bébé - Collection 'Je déchire' - Modèle Bleu  <span class="price_cadeau">14,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-bebe/plaque-de-porte-chouette.jpg" alt="icon cadeau bébé">
+                            <p>Plaque décorative Personnalisable - Chouette  <span class="price_cadeau">24,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="sections_button_container">
+                    <button class="btn gray">Tous nos cadeaux pour bébé</button>
+                </div>
+    
+            </section>
+            <section class="cadeau_animaux">
+                <div class="sections_headline_container">
+                    <h1 class="sections_headline">Notre accessoires personnalisés <br> <span class="sections_headline_span">pour vos animaux</span> </h1>
+                    <hr>
+                </div>
+                <div class="sections_cadeau_container">
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-animaux/gamelle-chat-chien-photo.jpg" alt="icon cadeau animaux">
+                            <p>Gamelle pour animaux Personnalisable - Photo et Prénom <span class="price_cadeau">16,90€</span> </p>
+                            
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-animaux/tapis-animaux-chien-pattes.jpg" alt="icon cadeau animaux">
+                            <p>Tapis molletonné pour chien Personnalisable - Pattes & Os <span class="price_cadeau">19,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-animaux/medaillon-rond-chat-clair.jpg" alt="icon cadeau animaux">
+                            <p>Médaille pour Chat Personnalisable - Prénom et Téléphone - Modèle clair <span class="price_cadeau">6,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-animaux/bandana-chien-papattes.jpg" alt="icon cadeau animaux">
+                            <p>Bandana pour chien Personnalisable - Papattes <span class="price_cadeau">14,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="sections_button_container">
+                    <button class="btn gray">Tous nos accessoires</button>
+                </div>
+    
+            </section>
+            <section class="cadeau_coeur">
+                <div class="sections_headline_container">
+                    <h1 class="sections_headline">vos coups de  <span class="sections_headline_span">coeur</span> </h1>
+                    <hr>
+                </div>
+                <div class="sections_cadeau_container">
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-coeur/disque-d-or.jpg" alt="icon cadeau coeur">
+                            <p>Disque d’or personnalisé <span class="price_cadeau">19,90€</span> </p>
+                            
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-coeur/rose-en-or-coffret-grave_maman.jpg" alt="icon cadeau coeur">
+                            <p>Grande rose en or (36 cm) 24 carats dans son écrin personnalisé <span class="price_cadeau">99,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-coeur/authentique-journal-de-naissance-personnalisable.jpg" alt="icon cadeau coeur">
+                            <p>Authentique Journal du Jour de Naissance et son écrin personnalisable <span class="price_cadeau">29,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    <div class="section_cadeau">
+                        <a href="#">
+                            <img src="./images/cadeaux-coeur/mug-famille-picto.jpg" alt="icon cadeau coeur">
+                            <p>Mug Family Circus <span class="price_cadeau">14,90€</span> </p>
+                        
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="sections_button_container">
+                    <button class="btn gray">Tous nos accessoires</button>
+                </div>
+    
+            </section>
+            <section class="cadeau_personnaliser">
+                <div class="sections_headline_container">
+                    <h1 class="sections_headline"> <span class="sections_headline_span">Cadeau personnalisé</span> </h1>
+                    <hr>
+                </div>
+                <div class="cadeau_personnaliser_container">
+                    <div class="comment_ca_marche">
+                        <h2>Près de 1500 <a href="#"> cadeaux personnalisables </a> <br>
+                            <strong>comment ça marche ?</strong></h2>
+                        <div class="comment_ca_marche_step">
+                            <img src="./images/pink-mug.png" alt="comment ça marche icon">
+                            <p> <strong> 1- Je choisis mon cadeau </strong> <br>
+                                à personnaliser (mug, coussin, t-shirt, etc.)</p>
+                        </div>
+                        <div class="comment_ca_marche_step">
+                            <img src="./images/pen-window.png" alt="comment ça marche icon">
+                            <p> <strong> 2- Je le personnalise et j'admire le résultat </strong> <br>
+                                à l'aide de la prévisualisation mise à disposition sur la page</p>
+                        </div>
+                        <div class="comment_ca_marche_step">
+                            <img src="./images/pink-truck.png" alt="comment ça marche icon">
+                            <p> <strong> 3- Je fais plaisir et je l'envoie </strong> <br>
+                                à mon ou mes heureux destinataires</p>
+                        </div>
+                    </div>
+                    <figure class="cadeau_personnaliser_je_test">
+                        <div class="je_test_container">
+                            <img src="./images/coussin-family-circus-HP.jpg" alt="cadeau personnalisés">
+                            <div class="je_test_btn">
+                                <button class="btn red">Je test</button>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+        </div>
+        <section>
+            <div class="newsletter">
+                <h1 class="newsletter_headline">INSCRIVEZ-VOUS À NOTRE NEWSLETTER</h1>
+                <p class="newsletter_offer">et recevez <strong>-15%</strong>  pour votre 1er achat</p>
+                <form action="#" class="newsletter_form">
+                    <input type="text" name="email" id="email" placeholder="Votre adresse e-mail">
+                    <button type="submit" class="btn red">S'inscrire</button>
+                </form>
+
+            </div>
+            <p class="newsletter_description">Informations destinées à MYGIFT, pour l’envoi d’informations sur ses produits et ses offres. Elles seront conservées pendant 3 ans. Conformément au RGPD entré en vigueur le 25/05/2018, vous disposez des droits d’opposition, d’accès, de rectification, de limitation et d’effacement, et d’un droit à la portabilité de vos données personnelles, en écrivant à INTERFLORA –DPO – CS 73646 – 69423 LYON Cedex 03, ou à une autorité de contrôle. (voir CGV).</p>
+        </section>
+        <article class="cadeau_article">
+            <div>
+                <h2 class="cadeau_article_headline">Idée cadeau : trouver un cadeau original ou un cadeau personnalisé</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Un cadeau pour femme</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Un cadeau pour homme</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Un cadeau pour ado</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Un cadeau pour enfant</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Un cadeau pour bébé</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Trouvez un Cadeau Saint Valentin unique et personnalisé</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Offrir un cadeau pour la fête des grands mères</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Quel cadeau offrir pour la Fête des Mères ?</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Quel cadeau offrir pour la Fête des Pères ?</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">1001 idées de cadeaux d’anniversaire</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Trouvez votre idée de cadeau de</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">A chaque événement, son cadeau personnalisé</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <h2 class="cadeau_article_headline">Offrez des fleurs avec votre cadeau personnalisé</h2>
+                <p class="cadeau_article_paragraphe">Que vous recherchiez un cadeau pour une femme, un homme, un enfant ou un ado, il y a des idées cadeaux pour tout le monde ! Rien ne fait plus plaisir qu’un cadeau pour lequel la personne a pris le temps d’apporter sa touche personnelle. Il y a des cadeaux personnalisés pour tous les goûts ! Verres gravés, horloge personnalisée, nounours photo, bijou personnalisé, cadeau déco unique, vin et spiritueux… Avec nos idées cadeaux, soyez sûr de faire des heureux ! Trouver facilement l’idée cadeau idéale grâce à un moteur de recherche simplissime ! Choisissez le destinataire de votre cadeau personnalisé, l’évènement pour lequel vous cherchez une idée cadeau et la date à laquelle vous souhaitez que le cadeau vous soit livré. Affinez ensuite les résultats d’idées cadeaux par catégorie : bouteille de vin personnalisée, cadre gravé, coussin personnalisé, ou même cadeau personnalisé pour la cuisine. En un coup d’œil, découvrez par exemple toutes <a href="#">nos idées cadeaux pour l’anniversaire d’une femme</a> , la Fête des Mères, un mariage ou simplement pour le plaisir d’offrir. Alors TOP c’est parti pour la chasse aux cadeaux !</p>
+            </div>
+            <div>
+                <p class="cadeau_article_paragraphe"> <a href="#">11 198 clients</a>  notent tous nos cadeaux <img src="./images/etoile_4.0.gif" alt="votes cadeau"> </p>
+            </div>
+            <div>
+                <p class="cadeau_article_paragraphe_interdit">
+                        <strong> Interdiction de vente de boissons alcooliques aux mineurs de moins de 18 ans</strong>
+                        La preuve de majorité de l'acheteur est exigée au moment de la vente en ligne. 
+                        <span class="loi_sante">CODE DE LA SANTÉ PUBLIQUE, ART. L.3342-1 ET L.3342-3</span>
+                </p>
+            </div>
+        </article>
+
+
+    </main>
+    <footer class="footer">
+        <nav class="footer_nav">
+            <div class="footer_nav_links">
+                <div class="footer_nav_cell">
+                    <h3 class="footer_nav_cell_headline">Cadeaux.com</h3>
+                    <a href="#" class="footer_nav_cell_link">Qui sommes-nous ?</a>
+                    <a href="#" class="footer_nav_cell_link">Nous contacter</a>
+                    <a href="#" class="footer_nav_cell_link">Devenir partenaire</a>
+                </div>
+                <div class="footer_nav_cell">
+                    <h3 class="footer_nav_cell_headline">Nos Engagements</h3>
+                    <a href="#" class="footer_nav_cell_link">Cadeaux originaux et uniques</a>
+                    <a href="#" class="footer_nav_cell_link">Pour tous les budgets</a>
+                    <a href="#" class="footer_nav_cell_link">Cadeaux personnalisés en France</a>
+                    <a href="#" class="footer_nav_cell_link">Expédition rapide</a>
+                </div>
+                <div class="footer_nav_cell">
+                    <h3 class="footer_nav_cell_headline">Mentions légales</h3>
+                    <a href="#" class="footer_nav_cell_link">Conditions générales de ventes</a>
+                    <a href="#" class="footer_nav_cell_link">Mentions légales</a>
+                </div>
+                <div class="footer_nav_cell">
+                    <h3 class="footer_nav_cell_headline">Votre commande</h3>
+                    <a href="#" class="footer_nav_cell_link">Suivi de commande</a>
+                    <a href="#" class="footer_nav_cell_link">Service client</a>
+                    <a href="#" class="footer_nav_cell_link">FAQ</a>
+                </div>
+                <div class="footer_nav_cell">
+                    <h3 class="footer_nav_cell_headline">Nous suivre</h3>
+                    <a href="#" class="footer_nav_cell_link_social"> <img src="./images/facebook_w.svg" alt="social media facebook" width="35px"> </a>
+                    <a href="#" class="footer_nav_cell_link_social"> <img src="./images/instagram_w.svg" alt="social media instagram" width="35px"> </a>
+                    <a href="#" class="footer_nav_cell_link_social"> <img src="./images/blog_w.svg" alt="link blog" width="35px"> </a>
+                </div>
+            </div>
+            <div class="footer_groupe_interflora">
+                <p>Un site du groupe </p>
+                <div>
+                    <img src="./images/logo-gold-interflora.png" alt="logo groupe interflora" width="100px">
+                </div>
+            </div>
+        </nav>
+        <div class="footer_paiment_security">
+            <img src="./images/paiement-securise.jpg" alt="paiment security" width="450px">
+        </div>
+        <div class="footer_home_icon">
+            <a href="#">
+                <img src="./images/icon-cadeau-original.png" alt="home cadeau icon" width="67px">
+            </a>
+        </div>
+        <div class="footer_tel_contact">
+            <p>
+                <strong>Tél : <a href="tel:0892 88 66 33" class="tel">0892 88 66 33</a> </strong> 40 centimes par minute + coût d'un appel local <br>
+                2000 - 2019 Cadeaux.com
+            </p>
+            <img class="rating_icon" src="./images/no_rating.png" alt="rating icon" >
+        </div>
+    </footer>
+
+</body>
+
+</html>
