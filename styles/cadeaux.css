@@ -1,0 +1,11 @@
+/*       Common style */
+@import url("commun-style.css");
+
+
+/*       full screen style */
+@import url("full-screen-style.css");
+
+
+/*       small screen style */
+@import url("small-screen.css");
+

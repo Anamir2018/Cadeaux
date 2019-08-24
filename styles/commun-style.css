@@ -1,0 +1,600 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --mainColorGray: #3D3D3B;
+    --mainColorRed: #E4244B;
+    --mainFont: 'Montserrat';
+
+    font-size: 16px;
+    font-family: var(--mainFont), 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------Header------------------------------*/
+header{
+    width: 100%;
+}
+    /*_______Header container_____*/
+    .header_container{
+        width: 100%;
+        padding: 5px 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        /*______Logo icon______*/
+        .logo_icon{
+            margin: 0;
+        }
+
+        /*______Search bar______*/
+        .form_search_bar form{
+            position: relative;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            
+            padding: 5px 3px;
+
+        }
+            .form_search_bar input[type="text"]{
+                width: 90%;
+                border: 0;
+                line-height: 1.5rem;
+                padding-left: 2px;
+                outline: none;
+            }
+            .form_search_bar input[type="button"]{
+                width: 20px;
+                height: 20px;
+                margin-top: 3px;
+                float: right;
+                cursor: pointer;
+                border: none;
+                background: url("/images/search-icon.png") no-repeat;
+                background-size: contain;
+                outline: none;
+
+            }
+    /*----------------- mainNav Bar-----------------------*/
+.mainNav{
+    width: 100%;
+
+}
+    .mainNav .drop_down_menu{
+        width: 100%;
+        background-color: #fff;
+        display: none;
+    }
+    
+        .drop_down_menu > a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.875rem;
+            font-weight: bold;
+            line-height: 1.5rem;
+        }
+        .drop_down_menu > a::before{
+            content: "▶";
+            padding: 0 3px;
+        }
+        
+        .drop_down_menu_categories a:hover{
+            text-decoration: underline;
+        }
+                .drop_down_menu_categories .drop_down_menu_category{
+                    padding-left: 12px;
+                }
+                .drop_down_menu_category .favorite_link::after{
+                    content: url(/images/coeur.png);
+                    padding-left: 5px;
+                    display: inline-block;
+
+                }
+                .drop_down_menu_category:hover .favorite_link::after{
+                    transform: rotate(1turn);
+                    transition: 0.5s;
+
+                }
+                .drop_down_menu_category h2{
+                    color: #E4244B;
+                    color: var(--mainColorRed);
+                    font-size: 1rem;
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+                .drop_down_menu_category ul{
+                    color: #3D3D3B;
+                    color: var(--mainColorGray);
+
+                }
+                .drop_down_menu_category ul li{
+                    line-height: 1.5rem;
+
+                }
+                    .drop_down_menu_category a{
+                        text-decoration: none;
+                        font-size: 0.75rem;
+                        font-family: var(--mainFont), sans-serif;
+                        color: #3D3D3B;
+                        color: var(--mainColorGray);
+                    }
+        .mainNav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+        }
+      
+/*------------------------------ Main -------------------------*/
+
+/*_______________________ Carroussel _____________________*/
+.carrousel{
+    background-color: #E7DED3;
+    color: #74695C;
+
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 20px 0;
+    
+}
+    .carrousel figure:first-of-type{
+        background-image: url("../images/img-carrousel1.jpg");
+        background-position: right bottom;
+    }
+    .carrousel figure:last-of-type{
+        background-image: url("../images/img-carrousel2.jpg");
+        background-position: left bottom;
+    }
+    .carrousel figure{
+        background-size: cover;
+        margin: 0;
+        width: 366px;
+        height: 242px;
+    }
+    .carrousel .carrousel_body{
+        background-color: #E7DED3;
+        min-width: 280px;
+        margin: 20px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+        }
+            .carrousel_body h1{
+                font-weight: bold;
+                font-size: 2rem;
+                margin: 10px 0;
+                
+            }
+            .carrousel_body p{
+                margin:10px 0;
+                font-family: Satisfy, sans-serif;
+            }
+                .carrousel_body p span{
+                    font-family: sans-serif;
+                }
+            .carrousel button{
+                font-family: var(--mainFont), 'Montserrat', sans-serif;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                color: white;
+                background-color: #E4244B;
+                background-color: var(--mainColorRed);
+                border: none;
+                width: 235px;
+                height: 45px;
+                font-weight: bold;
+                cursor: pointer;
+
+            }
+
+/*-------------------- Sections-------------------------------*/
+.sections{
+    padding: 10px 3%;
+    
+}
+    /*___ sections links ___*/
+    .sections a{
+        text-decoration: none;
+        color: black;
+    }    
+
+    /*__ sections headline ___*/
+    .sections_headline_container{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*___ sections cadeaux container ____*/
+    .sections_cadeau_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto 20px auto;
+        max-width: 1600px;
+    }
+        
+        .sections_cadeau_container .section_cadeau{
+            padding: 10px;
+            width: 25%;
+            max-width: 400px;
+        }
+        
+            .section_cadeau p{
+                padding: 10px 5px;
+            }
+            .section_cadeau p,
+            .section_cadeau img{
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
+            .section_cadeau:hover p{
+                background-color: rgba(220, 220, 220, 0.5);
+            }
+            
+            .section_cadeau:hover img,
+            .section_cadeau_marie_selection:hover img{
+                opacity: 0.8;
+                filter: brightness(90%);
+                -webkit-filter: brightness(90%);
+                -moz-filter: brightness(90%);
+                -o-filter: brightness(90%);
+                -ms-filter: brightness(90%);
+            }
+
+            .section_cadeau .price_cadeau{
+                font-weight: bold;
+                display: block;
+            }
+
+    /*__ sections buttons ___*/
+    .sections_button_container{
+        text-align: center;
+    }
+    /*__Sections headlines__*/
+    .sections_headline{
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: #3D3D3B;
+        color: var(--mainColorGray);
+    }
+        /*__sections title span__*/
+        .sections_headline_span{
+            font-family: Satisfy, sans-serif;
+            font-size: 2.45rem;
+        }
+        /*__ Section title br*/
+        .sections .sections_headline br{
+            display: none;
+        }
+        /*__ styling  buttons  ___*/
+        .btn{
+            border: none;
+            color: white;
+            font-size: 1rem;
+            padding: 20px 40px;
+            cursor: pointer;
+        }
+        .btn.red{
+            background-color: #E4244B;
+            background-color: var(--mainColorRed);
+        }
+        .btn.gray{
+            background-color: #3D3D3B;
+            background-color: var(--mainColorGray);
+        }
+        .btn.gray:hover{
+            background-color: black;
+            transition: 0.5s;
+        }
+        .btn.red:hover{
+            background-color:rgb(189, 30, 62);
+            transition: 0.5s;
+        }
+    /*_________________ Section Offre original ____________________*/
+
+    
+    /*__Offre original content__*/
+    .offre_original_container{
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .offre_original_container div{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+            .offre_original_container div img{
+                margin-right: 10px;
+            }
+
+    /*____________ Section pour les mariés __________________*/
+
+    .cadeau_marie{
+        text-align: center;
+        color: #3D3D3B;
+        color: var(--mainColorGray);
+        font-size: 1.56rem;
+    }
+        .cadeau_marie span{
+            text-align: center;
+        }
+        /*__ cadeau mariés suggestions __*/
+        .section_cadeau_marie{
+            
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+            /*__ selection of cadeau marié __*/
+            .section_cadeau_marie_selection{
+                position: relative;
+                padding: 20px 10px 0 10px;
+                width: 25%;
+                max-width: 400px;
+                font-size: 1rem;
+                font-weight: bold;
+                color: black;
+            }
+                .section_cadeau_marie_selection img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .section_cadeau_marie_selection p{
+                    transform-origin: center bottom;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    margin: 0;
+                    padding: 10px 0;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    
+                }
+    /*_____________ Section comment ça marche */
+    .cadeau_personnaliser_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+        /*___ styling headline ___*/
+        .comment_ca_marche h2{
+            font-size: 1.1375rem;
+            font-weight: normal;
+            min-width: 353px;
+        }
+        .comment_ca_marche h2 a:hover{
+            text-decoration: underline;
+        }
+        /*___ styling comment ça marche steps ___*/
+        .comment_ca_marche_step{
+            display: flex;
+            font-size: 0.8125rem;
+            padding: 20px 10px;
+
+        }
+        .comment_ca_marche_step img{
+            width: 62px;
+            height: 62px;
+        }
+        .comment_ca_marche_step p{
+            min-width: 290px;
+        }
+
+        /*______ Styling je test cadeau personnalisé _____*/
+        .cadeau_personnaliser_je_test{
+            margin: 0;
+        }
+        .cadeau_personnaliser_je_test .je_test_container{
+            position: relative;
+            width: 500px;
+            height: 360px;
+            
+        }
+        .cadeau_personnaliser_je_test img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .cadeau_personnaliser_je_test .je_test_btn{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .cadeau_personnaliser_je_test button{
+            width: 290px;
+            height: 60px;
+            font-size: 1rem;
+            font-family: var(--mainFont), sans-serif;
+            font-weight: 500;
+            
+            
+        }
+
+
+/*------------------------ News Letter -------------------------------*/
+.newsletter{
+    display: block;
+    width: 100%;
+    background-color: #EBEAE5;
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+}
+    .newsletter_headline{
+        font-weight: normal;
+        font-size: 1.625rem;
+        margin: 0 0 10px 0;
+    }
+    .newsletter_offer{
+        margin: 10px 0;
+    }
+    .newsletter_form{
+        display: flex;
+        max-width: 870px;
+        margin: 0 auto;
+
+    }
+        .newsletter_form input{
+            flex-grow: 3;
+            height: 50px;
+            margin: 0;
+            padding: 5px;
+            font-size: 1rem;
+            font-family: var(--mainFont), sans-serif;
+        }
+        .newsletter_form button{
+            width: 245px;
+            height: 50px;
+            text-transform: uppercase;
+        }
+    .newsletter_description{
+        font-size: 0.6875rem;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1125px;
+    }
+
+
+/*------------------------- Cadeau home page article ---------------*/
+.cadeau_article{
+    padding: 40px 58px;
+    margin: 0 auto;
+    max-width: 1125px;
+    font-family: var(--mainFont), sans-serif;
+}
+    .cadeau_article_headline{
+        font-size: 1.5625rem;
+        font-weight: 500;
+        line-height: 27.5px;
+        color: #3D3D3B;
+        color: var(--mainColorGray);
+    }
+    .cadeau_article_paragraphe{
+        text-align: justify;
+        font-size: 0.875rem;
+        color: #3D3D3B;
+        color: var(--mainColorGray);
+    }
+        .cadeau_article_paragraphe a{
+            color: #E4244B;
+            color: var(--mainColorRed);
+        }
+
+
+    .cadeau_article_paragraphe_interdit{
+        font-family:  Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+    }
+        .cadeau_article_paragraphe_interdit .loi_sante{
+            display: block;
+            text-align: right;
+            font-size: 0.6125rem;
+            padding: 5px;
+        }
+
+
+/*------------------ Footer --------------------------*/
+.footer{
+    width: 100%;
+}
+    .footer_nav{
+        width: 100%;
+        
+        background-color: #3D3D3B;
+        background-color: var(--mainColorGray);
+    }
+        .footer_nav_links{
+            padding: 40px 4%;
+            max-width: 1125px;
+            margin: 0 auto;
+            display: flex;
+            
+
+        }
+            
+            .footer_nav_cell{
+                width: 16.6666666667%;
+                padding: 5px;
+            }   
+            .footer_nav_cell:nth-of-type(2),
+            .footer_nav_cell:nth-of-type(3){
+                width: 25%;
+
+            }
+                .footer_nav_cell_headline{
+                    color: white;
+                    font-size: 0.875rem;
+                    border-bottom: 1px solid white;
+                    line-height: 1.25rem;
+                    padding: 5px 0;
+                    font-weight: normal;
+
+                }
+                .footer_nav_cell_link{
+                    display: block;
+                    
+                    white-space: nowrap;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.75rem;
+                }
+                .footer_nav_cell_link:hover{
+                    text-decoration: underline;
+                }
+                .footer_nav_cell .footer_nav_cell_link_social{
+                    display: inline-block;
+                    margin: 0 5px;
+                }
+            /*___ Groupe interflora txt _____*/
+            .footer_groupe_interflora{
+                background-color: black;
+                padding: 10px 0 ;
+                color: white;
+                width: 100%;
+                text-align: center;
+
+            }
+                .footer_groupe_interflora div,
+                .footer_groupe_interflora p{
+                    display: inline-block;
+                    margin: auto 5px;
+
+                }
+
+
+        .footer_paiment_security{
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px dashed gray;
+        }
+        .footer_home_icon{
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer_tel_contact{
+            text-align: center;
+            font-size: 0.8125rem;
+        }
+            .footer_tel_contact .tel{
+                color: black;
+            }
+            .footer_tel_contact .rating_icon{
+                float: left;
+            }

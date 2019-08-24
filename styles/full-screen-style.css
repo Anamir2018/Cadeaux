@@ -1,0 +1,173 @@
+/*-------------------Media queries------------------------------*/
+
+@media only screen and (min-width:768px)
+{
+/*-----------------------Header------------------*/
+
+/*_______Button responsive menu_____*/
+.btn_menu_responsive{
+    display: none;
+}
+
+/*______Logo icon______*/
+.logo_icon{
+    padding: 0 5px;
+}
+    .logo_icon img{
+        width: 100%;
+        max-width: 304px;
+        min-width: 200px;
+        flex-grow: 1;
+    }
+
+/*_______Search bar_____*/
+.search_bar{
+    flex-basis: 2;
+    flex-grow: 2;
+}
+    .search_bar_icon{
+        display: none;
+    }
+    .form_search_bar{
+        width: 100%;
+        padding: 0 10px; 
+    }
+    .form_search_bar form{
+        margin: 0 auto;
+        min-width: 336px;
+        max-width: 490px;
+    }
+        
+/*_______Basket_____*/
+.basket{
+    flex-basis: 1;
+    padding: 0 5% 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .basket span{
+        margin: 8px 0 0 10px;
+        color: #3D3D3B;
+        color: var(--mainColorGray);
+
+    }
+    .basket span:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+/*-----------------mainNav Bar----------------------*/
+.mainNav{
+    padding: 0 5%;
+    background-color: #3D3D3B;
+    background-color: var(--mainColorGray);
+}
+    
+    .mainNav .mainNav_container{
+        position: relative;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .mainNav_container .mainNav_link{
+            margin: 0;
+            height: 100%;
+            
+        }
+        .mainNav_container .mainNav_link:hover{
+            background-color: #fff;
+
+        }
+        
+        .mainNav.responsive .mainNav_link_headline{
+            display: block;
+            position: relative;
+            width: 100%;
+            text-decoration: none;
+            
+            color: #3D3D3B;
+            color: var(--mainColorGray);
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+        .mainNav_link .mainNav_link_headline:hover{
+            color: #3D3D3B;
+            color: var(--mainColorGray);
+        }
+        .mainNav_link .mainNav_link_headline_responsive{
+            display: none;
+        }
+        .mainNav_link .mainNav_link_headline{
+            display: block;
+            padding: 10px 35px;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            font-size: 0.82rem;
+            text-align: center;
+            color: white;
+        }
+        .mainNav_link:hover .drop_down_menu{
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+        }
+        .mainNav_container .drop_down_menu{
+            display: none;
+            border: 1px solid gainsboro;
+            border-top: none;
+            box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.4);
+            padding: 10px;
+
+        }
+            .drop_down_menu .drop_down_menu_categories{
+                display: flex;
+                justify-content: space-between;
+
+            }
+            
+                
+                .drop_down_menu_categories .drop_down_menu_category{
+                    min-width: 187px;
+
+                }
+                
+/*--------------------------- Main ------------------------*/
+.carrousel{
+    margin: 5px 5%;
+}
+
+/*--------------------------- Sections -----------------------------*/
+/*_________________ Offre original ____________________*/
+.offre_original_container div{
+    width: 25%;
+}
+
+/*____________ Section pour les mariés __________________*/
+
+.sections_headline_container{
+    position: relative;
+}
+.sections_headline_container h1{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 40px;
+}
+.sections_headline_container hr{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    top: 39%;
+}
+
+
+
+}

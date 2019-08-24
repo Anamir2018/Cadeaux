@@ -1,0 +1,344 @@
+
+@media only screen and (max-width:767px)
+{
+/*-----------------------Header------------------*/
+.header{
+    z-index: 5;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.header.responsive{
+    
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+}
+/*_______Button responsive menu_____*/
+.btn_menu_responsive{
+    display: block;
+    cursor: pointer;
+}
+    .btn_menu_responsive span{
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 4px 0;
+        background-color: #3D3D3B;
+        background-color: var(--mainColorGray);
+    }
+
+/*_______Logo icon_____*/
+.logo_icon{
+    padding: 0 8%;
+}
+    .logo_icon img{
+        width: 200px;
+    }
+
+/*_______Search bar_____*/
+.search_bar{
+    padding: 0 5%;
+}
+    .search_bar_icon{
+        cursor: pointer;
+        
+    }
+    .search_bar .form_search_bar{
+        display: none;
+    }
+    /*show and hide search bar*/
+    
+    .search_bar_show_container .form_search_bar{
+        display: block;
+        margin: 10px 20px;
+        box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.479);
+    }
+    
+
+/*_______basket_____*/
+.basket{
+    padding: 0 5%;
+}
+    .basket img{
+        width: 30px;
+        cursor: pointer;
+    }
+    .basket span{
+        display: none;
+    }
+
+
+/*--------------------mainNav Bar Responsive -------------------*/
+
+.mainNav{
+    display: none;
+}
+.mainNav.responsive{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+    .mainNav.responsive .mainNav_container{
+        width: 100%;
+        height: 100%;
+        padding-top:10px 0;
+    }
+        .mainNav.responsive .mainNav_link:first-child{
+            border-top: 1px solid gainsboro;
+        }
+
+        
+        .mainNav.responsive .mainNav_link{
+            display: block;
+            width: 100%;
+            margin: 0;
+            text-decoration: none;
+            border-bottom: 1px solid gainsboro;
+            
+        }
+        .mainNav.responsive  .mainNav_link_headline:hover,
+        .mainNav.responsive  .mainNav_link_headline_responsive:hover{
+            background-color: #3D3D3B;
+            background-color: var(--mainColorGray);
+            color: white;
+
+        }
+        /*   headline links for small screens   */
+        .mainNav.responsive .mainNav_link_headline:last-child{
+            text-decoration: none;
+        }
+        .mainNav.responsive .mainNav_link_headline:last-child:hover{
+            color: white;
+        }
+        .mainNav.responsive .mainNav_link_headline:last-child,
+        .mainNav.responsive .mainNav_link_headline_responsive{
+            display: block;
+            color: #3D3D3B;
+            color: var(--mainColorGray);
+            font-size: 0.875rem;
+            font-weight: normal;
+            line-height: 1.5rem;
+            cursor: default;
+            margin: 0;
+            padding: 5px 15px;
+            border-bottom: 1px solid gainsboro;
+        }
+        .mainNav.responsive .mainNav_link_headline:not(:last-child){
+            display: none;
+
+        }
+        /* Create the drop down menu arrow */
+        .mainNav.responsive .mainNav_link[onclick] .mainNav_link_headline::after,
+        .mainNav.responsive .mainNav_link[onclick] .mainNav_link_headline_responsive::after{
+            content: "❯";
+            float: right;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transform: rotate(.25turn);
+
+        }
+        /* Drop down the submenu */
+        .mainNav_link.responsive .mainNav_link_headline{
+            background-color: #3D3D3B ;
+            background-color:var(--mainColorGray);
+            color: white;
+        }
+        .mainNav_link.responsive .drop_down_menu{
+            display: block;
+            padding-bottom: 20px;
+            border-bottom: 1px solid gray;
+            background-color: rgba(133, 133, 133, 0.05);
+        }
+        .mainNav_link.responsive .drop_down_menu_category ul{
+            padding-left: 20px;
+
+        }
+        /* stylize the drop downed menu nav links */
+        .mainNav.responsive .mainNav_link.responsive[onclick] .mainNav_link_headline_responsive::after,
+        .mainNav.responsive .mainNav_link.responsive .mainNav_link_headline_responsive{
+            color: white;
+            background-color: #3D3D3B;
+            background-color: var(--mainColorGray);
+        }
+        .mainNav.responsive .mainNav_link.responsive[onclick] .mainNav_link_headline_responsive::after{
+            transform: rotate(.75turn); 
+        
+        }
+        
+/*--------------------- Main --------------------------*/
+
+/*--------------------- Sections ----------------------*/
+/*____________ section cadeau __________*/
+.sections_cadeau_container .section_cadeau{
+    width: 50%;
+}
+
+.sections_headline_container hr{
+    display: none;
+}
+.sections_headline{
+    font-size: 1.25rem !important;
+}
+    /*__ section headline span ___*/
+    .sections_headline .sections_headline_span{
+        font-size: 1.75rem !important;
+    }
+    /*__ section headline br ___*/
+    .sections .sections_headline br{
+        display: inline;
+    }
+/*_________________ Section Offre original ____________________*/
+.offre_original .sections_headline{
+    font-size: 1.3125rem !important;
+}
+    .offre_original .sections_headline .sections_headline_span{
+        font-size: 1.8375rem !important;
+    }
+    .offre_original_container{
+        display: none;
+    }      
+/*____________ Section pour les mariés __________________*/
+
+/*__ selection of cadeau marié __*/
+.section_cadeau_marie_selection{
+    width: 50%;
+}
+
+/*_______________ Section cadeau personnalisé & comment ça marche___________*/
+.cadeau_personnaliser_container{
+    display: block;
+    text-align: center;
+
+}
+    .comment_ca_marche_step{
+        margin: 0 auto;
+        display: block;
+    }
+        .comment_ca_marche_step p{
+        display: block;
+    }
+        .comment_ca_marche_step img{
+            display: block;
+            margin: 0 auto;
+        }
+    
+    /*______ Styling je test cadeau personnalisé _____*/
+        .cadeau_personnaliser_je_test .je_test_container{
+            margin: 10px auto;
+            width: 100%;
+            height: calc(100%*360/500);
+            max-width: 500px;
+            max-height: 360px;
+        }
+        
+        
+        .cadeau_personnaliser_je_test button{
+            width: 200px;
+            height: 45px;
+        }
+
+/*------------------------ News Letter -------------------------------*/
+.newsletter{
+    padding: 20px 2px;
+}
+.newsletter_headline{
+    font-size: 1.125rem;
+}
+.newsletter_form button{
+    width: 142px;
+    height: 48px;
+    padding: 0 20px;
+}
+
+
+
+/*------------------------- Cadeau home page article ---------------*/
+.cadeau_article{
+    padding: 40px 10px;
+}
+
+/*------------------ Footer --------------------------*/
+.footer_nav_links{
+    display: block;
+}
+    
+    .footer_nav_cell:nth-of-type(n){
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width:991px){
+/*----------------- Header -------------------*/
+.basket span{
+    display: none;
+}
+
+.mainNav{
+    padding: 0 5px;
+}
+    .mainNav_container .mainNav_link > a{
+        padding: 10px 30px;
+        
+    }
+
+/*--------------------- Main ---------------------*/
+.carrousel{
+    margin: 5px;
+}
+/*-------------------- Sections ----------------------*/
+
+/*_________________ Offre original ____________________*/
+.offre_original_container div{
+    width: 50%;
+}
+/*_________________ offre mariés ________________________*/
+.section_cadeau_marie_selection p{
+    padding: 10px 20px;
+}
+  
+/*_______________ Section cadeau personnalisé & comment ça marche___________*/
+
+
+
+
+}
+
+
+@media only screen and (min-width:767px) and (max-width:991px)  {
+/*-------------------- Sections ----------------------*/
+
+/*_______________ Section cadeau personnalisé & comment ça marche___________*/
+.cadeau_personnaliser_je_test .je_test_container{
+    width: 352px;
+    height: 253px;
+    
+}
+    
+.cadeau_personnaliser_je_test .je_test_btn{
+    padding-bottom: 15px;
+
+}
+    
+/*------------------ Footer --------------------------*/
+.footer_nav_links{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+    .footer_nav_cell:nth-of-type(n){
+        width: 50%;
+
+    }
+}
